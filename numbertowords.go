@@ -10,12 +10,12 @@ var words = [20]string{"zero", "one", "two", "three", "four", "five", "six", "se
 var tenwords = [10]string{"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"}
 
 //MaxNumber is the largest number that this version of numberstowords can convert into words
-const maxNumber = 99999
+const MaxNumber = 99999
 
 //Convert function convert the number 0 to maxnumber integer into words
 func Convert(number int) (string, error) {
 
-	if number < 0 || number > maxNumber {
+	if number < 0 || number > MaxNumber {
 
 		return "", errors.New("number not in valid range")
 	}
